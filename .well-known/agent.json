@@ -1,0 +1,157 @@
+{
+  "name": "GhOsT77 Security",
+  "version": "1.0.0",
+  "description": "Website fixes, monthly upkeep, hacked-site cleanup, FAQ chatbot setup, and consent-only security reviews of systems you own. Reviews are AI-assisted and human-approved written reports, not a penetration test, compliance certification, or guarantee of security. This card points at live GhOsT77 endpoints that were verified on 2026-11-11. USDC payouts go only to 0x659db9537fee7a3473ff6e2a5a661af65ae288e3 on Base.",
+  "url": "https://ghost77-security.onrender.com/",
+  "documentationUrl": "https://ghost77-security.onrender.com/",
+  "provider": {
+    "organization": "GhOsT77 Security",
+    "url": "https://ghost77-security.onrender.com/"
+  },
+  "contact": {
+    "telephone": "+1-518-532-8037",
+    "email": "ghost77@mail.grokbot.com",
+    "emailPublishedOnLiveSite": "ghost77-secure@outlook.com"
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/html"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown",
+    "application/json"
+  ],
+  "discovery": {
+    "humanSite": "https://ghost77-security.onrender.com/",
+    "pricingJson": "pricing.json",
+    "servicesJson": "services.json",
+    "llmsTxt": "llms.txt",
+    "liveAgentLlmsTxt": "https://ghost77-agent.onrender.com/llms.txt",
+    "liveAgentCard": "https://ghost77-agent.onrender.com/.well-known/agent.json",
+    "liveAgentCardAlt": "https://ghost77-agent.onrender.com/.well-known/agent-card.json",
+    "liveX402": "https://ghost77-agent.onrender.com/.well-known/x402",
+    "liveServicesJson": "https://ghost77-agent.onrender.com/services.json",
+    "liveOpenApi": "https://ghost77-agent.onrender.com/openapi.json",
+    "liveMcpServerCard": "https://ghost77-agent.onrender.com/.well-known/mcp/server-card.json",
+    "liveMcpEndpoint": "https://ghost77-agent.onrender.com/mcp",
+    "liveA2A": "https://ghost77-agent.onrender.com/a2a",
+    "authorizationRequest": "https://ghost77-agent.onrender.com/security/request",
+    "authorizationTerms": "https://ghost77-agent.onrender.com/security/authorization",
+    "terms": "https://ghost77-security.onrender.com/terms",
+    "privacy": "https://ghost77-security.onrender.com/privacy",
+    "reportsRss": "https://ghost77-security.onrender.com/reports/feed.xml",
+    "securityTxt": "https://ghost77-security.onrender.com/.well-known/security.txt"
+  },
+  "payout": {
+    "wallet": "0x659db9537fee7a3473ff6e2a5a661af65ae288e3",
+    "network": "base",
+    "asset": "USDC"
+  },
+  "skills": [
+    {
+      "id": "website-fix",
+      "name": "Website Fix",
+      "tags": [
+        "website",
+        "fix",
+        "https"
+      ],
+      "description": "One-time $99 site fixes. Pay by Stripe Payment Link. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/3cIaEZ53K9UX0JA4M6gbm01"
+    },
+    {
+      "id": "website-upkeep",
+      "name": "Website Upkeep",
+      "tags": [
+        "website",
+        "monitoring",
+        "subscription"
+      ],
+      "description": "$25/month monitoring and small fixes. Cancel any time. Stripe subscription Payment Link. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/7sY6oJdAggjl1NE2DYgbm02"
+    },
+    {
+      "id": "hacked-site-cleanup",
+      "name": "Hacked Site Cleanup",
+      "tags": [
+        "cleanup",
+        "malware",
+        "consent-only"
+      ],
+      "description": "One-time $249 cleanup of one site you own. Starts after payment and written authorization. Stripe Payment Link. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/00waEZ3ZG9UXeAq2DYgbm0b",
+      "authorizationUrl": "https://ghost77-agent.onrender.com/security/request"
+    },
+    {
+      "id": "faq-chatbot-setup",
+      "name": "FAQ Chatbot Setup",
+      "tags": [
+        "chatbot",
+        "faq",
+        "website"
+      ],
+      "description": "One-time $199 embeddable FAQ chatbot for one site you own. Stripe Payment Link. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/5kQ28t8fW3wzgIy3I2gbm0c",
+      "infoUrl": "https://ghost77-security.onrender.com/chatbot"
+    },
+    {
+      "id": "faq-chatbot-care",
+      "name": "FAQ Chatbot Care",
+      "tags": [
+        "chatbot",
+        "subscription"
+      ],
+      "description": "Optional $29/month care. Cancel any time. Stripe Payment Link. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/14A28tcwc0kn63U1zUgbm0d"
+    },
+    {
+      "id": "security_review_quick",
+      "name": "Quick Security Review",
+      "tags": [
+        "security",
+        "audit",
+        "consent-only"
+      ],
+      "description": "Written findings-and-fixes review, $149. Request and sign at the authorization form; pay by card or USDC on Base. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/dRmeVf7bS5EH77YemGgbm03",
+      "authorizationUrl": "https://ghost77-agent.onrender.com/security/request"
+    },
+    {
+      "id": "security_review_standard",
+      "name": "Standard Security Review",
+      "tags": [
+        "security",
+        "audit",
+        "consent-only"
+      ],
+      "description": "Written review, $449, including authorized access and session checks and one 14-day retest. Request and sign at the authorization form. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/14A3cxeEk7MP8c2diCgbm04",
+      "authorizationUrl": "https://ghost77-agent.onrender.com/security/request"
+    },
+    {
+      "id": "security_review_deep",
+      "name": "Deep Security Review",
+      "tags": [
+        "security",
+        "audit",
+        "consent-only"
+      ],
+      "description": "Written review, $999, including in-scope endpoint and role review, a fix plan, and one 30-day retest. Request and sign at the authorization form. Not an x402 endpoint.",
+      "buyUrl": "https://buy.stripe.com/6oU6oJ1Ryebd1NE6Uegbm05",
+      "authorizationUrl": "https://ghost77-agent.onrender.com/security/request"
+    },
+    {
+      "id": "contract_security_scan",
+      "name": "Contract Security Scan",
+      "tags": [
+        "security",
+        "smart-contracts",
+        "x402"
+      ],
+      "description": "Related x402 job, $0.55 USDC on Base per call, not a website review package. POST the live endpoint; unpaid requests return HTTP 402.",
+      "buyUrl": "https://ghost77-agent.onrender.com/x402/contract_security_scan",
+      "x402": true
+    }
+  ]
+}
