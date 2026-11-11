@@ -109,6 +109,8 @@ Independent scanner results for [ghost77-security.onrender.com](https://ghost77-
 
 These are grades from independent scanners, not a promise the site cannot be hacked, and not results from a customer engagement.
 
+Fresh public checks re-run on 11 November 2026, 4:51–4:53 PM ET, are recorded in [TEST-RESULTS.md](TEST-RESULTS.md).
+
 ## Files in this repo
 
 | File | Purpose |
@@ -122,5 +124,6 @@ These are grades from independent scanners, not a promise the site cannot be hac
 | [SECURITY.md](SECURITY.md) | How to report a vulnerability |
 | [LICENSE](LICENSE) | All rights reserved for this content |
 | [SOURCES.md](SOURCES.md) | Public URLs these prices and links were taken from |
+| [TEST-RESULTS.md](TEST-RESULTS.md) | Fresh public scanner and TLS/header results for the live site |
 
 Suggested GitHub description and topics, if this is published later, are in [PUBLISH.md](PUBLISH.md). This local copy has not been pushed to GitHub.
