@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost77-security.onrender.com/schemas/services.schema.json",
+  "title": "GhOsT77 Security services",
+  "type": "object",
+  "required": [
+    "name",
+    "website",
+    "services"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "description": {
+      "type": "string"
+    },
+    "payout_wallet": {
+      "type": "string",
+      "pattern": "^0x[a-fA-F0-9]{40}$"
+    },
+    "usdc_network": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "terms_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "privacy_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "authorization_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "authorization_terms_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "checked_at": {
+      "type": "string"
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "services": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "price",
+          "currency",
+          "description"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "billing": {
+            "type": "string"
+          },
+          "payment_methods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "buy_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "method": {
+            "type": "string"
+          },
+          "info_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authorization_required": {
+            "type": "boolean"
+          },
+          "authorization_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "x402": {
+            "type": "boolean"
+          },
+          "pay_to": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "work_starts_after": {
+            "type": "string"
+          },
+          "cancel_anytime": {
+            "type": "boolean"
+          },
+          "agent_published_scope": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}
