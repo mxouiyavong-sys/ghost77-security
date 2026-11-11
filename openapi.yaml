@@ -1,0 +1,156 @@
+openapi: 3.1.0
+info:
+  title: GhOsT77 Security — live endpoint pointers
+  description: |
+    The marketing site https://ghost77-security.onrender.com has no public
+    API (no /openapi.json or /openapi.yaml). Security-review requests and
+    machine-payable jobs live on https://ghost77-agent.onrender.com.
+
+    This file only documents endpoints that were fetched and confirmed on
+    2026-11-11. The canonical, complete OpenAPI document for the agent is
+    https://ghost77-agent.onrender.com/openapi.json.
+  version: "1.0.0"
+  contact:
+    name: GhOsT77 Security
+    email: ghost77@mail.grokbot.com
+    url: https://ghost77-security.onrender.com/
+externalDocs:
+  description: Canonical live OpenAPI document
+  url: https://ghost77-agent.onrender.com/openapi.json
+servers:
+  - url: https://ghost77-agent.onrender.com
+    description: Live GhOsT77 agent (reviews, x402, discovery)
+  - url: https://ghost77-security.onrender.com
+    description: Live GhOsT77 Security marketing site (HTML, no API)
+tags:
+  - name: reviews
+    description: Consent-only security review request (HTML, not x402)
+  - name: x402
+    description: Pay-per-call USDC on Base
+  - name: discovery
+    description: Machine-readable discovery files
+paths:
+  /security/request:
+    get:
+      tags: [reviews]
+      summary: Authorization and payment request form for security reviews
+      description: >
+        Signed authorization is required before review work starts. Pay by
+        card or in USDC on Base through this flow. Not an x402 endpoint.
+        Verified HTTP 200 on 2026-11-11.
+      responses:
+        "200":
+          description: HTML request form
+          content:
+            text/html:
+              schema:
+                type: string
+  /security/authorization:
+    get:
+      tags: [reviews]
+      summary: Testing authorization and terms
+      description: Verified HTTP 200 text/plain on 2026-11-11.
+      responses:
+        "200":
+          description: Plain-language authorization text
+          content:
+            text/plain:
+              schema:
+                type: string
+  /x402/contract_security_scan:
+    post:
+      tags: [x402]
+      summary: Contract Security Scan ($0.55 USDC on Base)
+      description: >
+        Read-only scan of a verified-source EVM contract for proxy/admin
+        pattern, owner type, and privileged functions. Not financial advice
+        and not a website security review package. An unpaid request returns
+        HTTP 402 with payment terms. payTo is
+        0x659db9537fee7a3473ff6e2a5a661af65ae288e3. Verified 2026-11-11.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                network:
+                  type: string
+                  example: base
+                contract_address:
+                  type: string
+                  example: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      responses:
+        "402":
+          description: Payment required (x402 terms in the JSON body)
+          content:
+            application/json:
+              schema:
+                type: object
+        "200":
+          description: Scan result after a valid payment
+          content:
+            application/json:
+              schema:
+                type: object
+  /llms.txt:
+    get:
+      tags: [discovery]
+      summary: Live agent llms.txt
+      description: Verified HTTP 200 on 2026-11-11.
+      responses:
+        "200":
+          description: Plain-text agent summary
+          content:
+            text/plain:
+              schema:
+                type: string
+  /.well-known/agent.json:
+    get:
+      tags: [discovery]
+      summary: Live A2A agent card
+      description: Verified HTTP 200 on 2026-11-11. Same body as /.well-known/agent-card.json when checked.
+      responses:
+        "200":
+          description: Agent card JSON
+          content:
+            application/json:
+              schema:
+                type: object
+  /.well-known/x402:
+    get:
+      tags: [discovery]
+      summary: Live x402 manifest
+      description: Verified HTTP 200 on 2026-11-11.
+      responses:
+        "200":
+          description: x402 discovery document
+          content:
+            application/json:
+              schema:
+                type: object
+  /openapi.json:
+    get:
+      tags: [discovery]
+      summary: Canonical live OpenAPI document
+      description: Verified HTTP 200 on 2026-11-11.
+      responses:
+        "200":
+          description: OpenAPI JSON
+          content:
+            application/json:
+              schema:
+                type: object
+  /mcp:
+    post:
+      tags: [discovery]
+      summary: MCP Streamable HTTP endpoint
+      description: >
+        GET returns HTTP 405 with the message "Use POST with a JSON-RPC body
+        (MCP Streamable HTTP)." Server card:
+        https://ghost77-agent.onrender.com/.well-known/mcp/server-card.json
+      responses:
+        "200":
+          description: JSON-RPC MCP response
+        "405":
+          description: Returned for GET; confirms the endpoint exists

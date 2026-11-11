@@ -1,0 +1,218 @@
+{
+  "$schema": "./schemas/services.schema.json",
+  "name": "GhOsT77 Security",
+  "website": "https://ghost77-security.onrender.com/",
+  "description": "Website fixes, monthly website upkeep, hacked-site cleanup, FAQ chatbot setup, and consent-only security reviews. Reviews are AI-assisted and human-approved written reports, not a penetration test, compliance certification, or guarantee of security.",
+  "payout_wallet": "0x659db9537fee7a3473ff6e2a5a661af65ae288e3",
+  "usdc_network": "base",
+  "contact": {
+    "phone": "+1-518-532-8037",
+    "phone_label": "Rebecca, AI receptionist, 24/7. Mention your business name.",
+    "email": "ghost77@mail.grokbot.com",
+    "email_published_on_live_site": "ghost77-secure@outlook.com",
+    "address": "Johnson City, NY, US",
+    "security_txt": "https://ghost77-security.onrender.com/.well-known/security.txt"
+  },
+  "terms_url": "https://ghost77-security.onrender.com/terms",
+  "privacy_url": "https://ghost77-security.onrender.com/privacy",
+  "authorization_url": "https://ghost77-agent.onrender.com/security/request",
+  "authorization_terms_url": "https://ghost77-agent.onrender.com/security/authorization",
+  "source_url": "https://ghost77-security.onrender.com/",
+  "checked_at": "2026-11-11T16:50:00-05:00",
+  "disclaimer": "No review or set of fixes can make a system completely secure. These pages and the linked terms are a plain-language draft, not legal advice.",
+  "services": [
+    {
+      "id": "website-fix",
+      "name": "Website Fix",
+      "category": "website",
+      "price": 99,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card"
+      ],
+      "buy_url": "https://buy.stripe.com/3cIaEZ53K9UX0JA4M6gbm01",
+      "info_url": "https://ghost77-security.onrender.com/",
+      "source_url": "https://ghost77-security.onrender.com/",
+      "authorization_required": false,
+      "description": "One-time fixes for a site you own or manage: broken pages, links, and forms; mobile layout problems; missing security headers, where your host allows; HTTPS and certificate issues; a short written summary of what was changed.",
+      "work_starts_after": "payment and a confirmed scope, including the site URL (and FAQ text for the chatbot)"
+    },
+    {
+      "id": "website-upkeep",
+      "name": "Website Upkeep",
+      "category": "website",
+      "price": 25,
+      "currency": "USD",
+      "billing": "monthly",
+      "payment_methods": [
+        "stripe_card"
+      ],
+      "buy_url": "https://buy.stripe.com/7sY6oJdAggjl1NE2DYgbm02",
+      "info_url": "https://ghost77-security.onrender.com/",
+      "source_url": "https://ghost77-security.onrender.com/",
+      "authorization_required": false,
+      "description": "A monthly check plus small fixes: monitoring of HTTPS and certificate expiry, security header checks, small fixes when something slips, a short status note each month. Cancel any time.",
+      "work_starts_after": "payment and a confirmed scope, including the site URL (and FAQ text for the chatbot)",
+      "cancel_anytime": true
+    },
+    {
+      "id": "hacked-site-cleanup",
+      "name": "Hacked Site Cleanup",
+      "category": "website",
+      "price": 249,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card"
+      ],
+      "buy_url": "https://buy.stripe.com/00waEZ3ZG9UXeAq2DYgbm0b",
+      "info_url": "https://ghost77-security.onrender.com/cleanup",
+      "source_url": "https://ghost77-security.onrender.com/cleanup",
+      "authorization_required": true,
+      "description": "One-time cleanup of malware, spam injections, a defacement, or a browser security warning on one site you own. Written record, basic hardening you approve, help requesting a Google Safe Browsing review if a warning is showing. If a missed backdoor means the same infection is still there within 14 days, it is re-cleaned at no extra charge. Not a guarantee the site is safe or that Google will remove a warning.",
+      "work_starts_after": "payment and written authorization",
+      "authorization_url": "https://ghost77-agent.onrender.com/security/request"
+    },
+    {
+      "id": "faq-chatbot-setup",
+      "name": "FAQ Chatbot Setup",
+      "category": "website",
+      "price": 199,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card"
+      ],
+      "buy_url": "https://buy.stripe.com/5kQ28t8fW3wzgIy3I2gbm0c",
+      "info_url": "https://ghost77-security.onrender.com/chatbot",
+      "source_url": "https://ghost77-security.onrender.com/chatbot",
+      "authorization_required": false,
+      "description": "One-time setup of an embeddable question box for one website you own, answering from your FAQ text. Default answers use keyword matching; no paid API is required. Not a sales agent, phone or voice bot, or legal, medical, or financial advice. Live demo on the chatbot page.",
+      "work_starts_after": "payment and a confirmed scope, including the site URL (and FAQ text for the chatbot)"
+    },
+    {
+      "id": "faq-chatbot-care",
+      "name": "FAQ Chatbot Care",
+      "category": "website",
+      "price": 29,
+      "currency": "USD",
+      "billing": "monthly",
+      "payment_methods": [
+        "stripe_card"
+      ],
+      "buy_url": "https://buy.stripe.com/14A28tcwc0kn63U1zUgbm0d",
+      "info_url": "https://ghost77-security.onrender.com/chatbot",
+      "source_url": "https://ghost77-security.onrender.com/chatbot",
+      "authorization_required": false,
+      "description": "Optional monthly care for one FAQ chatbot: FAQ updates you send and a check that the widget still loads. Cancel any time.",
+      "work_starts_after": "payment and a confirmed scope, including the site URL (and FAQ text for the chatbot)",
+      "cancel_anytime": true
+    },
+    {
+      "id": "security-review-quick",
+      "name": "Quick security review",
+      "category": "security_review",
+      "price": 149,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card",
+        "usdc_base"
+      ],
+      "buy_url": "https://buy.stripe.com/dRmeVf7bS5EH77YemGgbm03",
+      "info_url": "https://ghost77-security.onrender.com/",
+      "source_url": "https://ghost77-security.onrender.com/",
+      "authorization_required": true,
+      "description": "A fast written pass before launch or a sale. Covers security headers, TLS and certificate expiry, CORS, cookie flags, HTTP to HTTPS, exposed debug/admin/config paths, unauthenticated endpoint checks, known-vulnerable dependencies (OSV), committed secrets (redacted), and Python static analysis. Up to 1 public GitHub repo. AI-assisted and human-approved. Not a penetration test, certification, or guarantee.",
+      "work_starts_after": "payment and written authorization",
+      "authorization_url": "https://ghost77-agent.onrender.com/security/request",
+      "agent_published_scope": {
+        "agent_name": "Quick Security Review",
+        "hostnames_max": 2,
+        "endpoints_max": 10,
+        "github_repos_max": 1,
+        "turnaround": "about 2 business days",
+        "source_url": "https://ghost77-agent.onrender.com/llms.txt"
+      },
+      "x402": false
+    },
+    {
+      "id": "security-review-standard",
+      "name": "Standard security review",
+      "category": "security_review",
+      "price": 449,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card",
+        "usdc_base"
+      ],
+      "buy_url": "https://buy.stripe.com/14A3cxeEk7MP8c2diCgbm04",
+      "info_url": "https://ghost77-security.onrender.com/",
+      "source_url": "https://ghost77-security.onrender.com/",
+      "authorization_required": true,
+      "description": "Everything in Quick, plus login, session, password-reset and token handling checks with test accounts you provide, role-to-role access checks, OWASP Top 10 / API Top 10 style non-destructive checks, and one retest of fixed findings within 14 days. Prefer test or staging.",
+      "work_starts_after": "payment and written authorization",
+      "authorization_url": "https://ghost77-agent.onrender.com/security/request",
+      "agent_published_scope": {
+        "agent_name": "Standard Security Audit",
+        "hostnames_max": 3,
+        "endpoints_max": 30,
+        "turnaround": "about 4 business days",
+        "retest_days": 14,
+        "source_url": "https://ghost77-agent.onrender.com/llms.txt"
+      },
+      "x402": false
+    },
+    {
+      "id": "security-review-deep",
+      "name": "Deep security review",
+      "category": "security_review",
+      "price": 999,
+      "currency": "USD",
+      "billing": "one_time",
+      "payment_methods": [
+        "stripe_card",
+        "usdc_base"
+      ],
+      "buy_url": "https://buy.stripe.com/6oU6oJ1Ryebd1NE6Uegbm05",
+      "info_url": "https://ghost77-security.onrender.com/",
+      "source_url": "https://ghost77-security.onrender.com/",
+      "authorization_required": true,
+      "description": "Everything in Standard, plus a step-by-step review of every in-scope endpoint and role (including business-logic abuse), source review of authentication, access control and input handling, threat notes, a prioritized fix plan, and one retest of fixed findings within 30 days.",
+      "work_starts_after": "payment and written authorization",
+      "authorization_url": "https://ghost77-agent.onrender.com/security/request",
+      "agent_published_scope": {
+        "agent_name": "Deep Security Audit",
+        "hostnames_max": 4,
+        "endpoints_max": 75,
+        "turnaround": "about 7 business days",
+        "retest_days": 30,
+        "source_url": "https://ghost77-agent.onrender.com/llms.txt"
+      },
+      "x402": false
+    },
+    {
+      "id": "contract-security-scan",
+      "name": "Contract Security Scan",
+      "category": "related_x402",
+      "price": 0.55,
+      "currency": "USDC",
+      "billing": "per_call",
+      "payment_methods": [
+        "usdc_base_x402"
+      ],
+      "buy_url": "https://ghost77-agent.onrender.com/x402/contract_security_scan",
+      "method": "POST",
+      "info_url": "https://ghost77-agent.onrender.com/llms.txt",
+      "source_url": "https://ghost77-agent.onrender.com/llms.txt",
+      "authorization_required": false,
+      "x402": true,
+      "unpaid_response": "HTTP 402 with payment terms",
+      "pay_to": "0x659db9537fee7a3473ff6e2a5a661af65ae288e3",
+      "description": "Related, optional, and separate from the website review packages. Read-only scan of a verified-source EVM contract for proxy/admin pattern, owner type, and privileged functions. Automated. Not financial advice, not a penetration test, and not one of the website or written-review packages on the Security marketing site.",
+      "work_starts_after": "valid x402 payment; payment settles only after the job succeeds, as stated on the live services manifest"
+    }
+  ]
+}

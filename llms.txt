@@ -1,0 +1,57 @@
+# GhOsT77 Security
+
+> Website fixes, monthly upkeep, hacked-site cleanup, FAQ chatbot setup, and consent-only security reviews for systems the customer owns or is authorized to have tested. Reviews are AI-assisted and human-approved written reports. They are not a human penetration test, a compliance certification, or a guarantee of security.
+
+Live human site: https://ghost77-security.onrender.com/
+This file is a sales summary. Canonical prices were copied from that site on 2026-11-11.
+
+## Services and prices (USD)
+
+- Website Fix: $99 one-time. Stripe: https://buy.stripe.com/3cIaEZ53K9UX0JA4M6gbm01
+- Website Upkeep: $25/month, cancel any time. Stripe: https://buy.stripe.com/7sY6oJdAggjl1NE2DYgbm02
+- Hacked Site Cleanup: $249 one-time. Stripe: https://buy.stripe.com/00waEZ3ZG9UXeAq2DYgbm0b — starts only after payment and written authorization. Details: https://ghost77-security.onrender.com/cleanup
+- FAQ Chatbot Setup: $199 one-time. Stripe: https://buy.stripe.com/5kQ28t8fW3wzgIy3I2gbm0c — demo: https://ghost77-security.onrender.com/chatbot
+- FAQ Chatbot Care: $29/month, cancel any time. Stripe: https://buy.stripe.com/14A28tcwc0kn63U1zUgbm0d
+- Quick security review: $149. Card: https://buy.stripe.com/dRmeVf7bS5EH77YemGgbm03
+- Standard security review: $449. Card: https://buy.stripe.com/14A3cxeEk7MP8c2diCgbm04
+- Deep security review: $999. Card: https://buy.stripe.com/6oU6oJ1Ryebd1NE6Uegbm05
+
+Cleanup and reviews do not start until payment and written authorization are complete. Default review checks are non-destructive and visitor-level.
+
+## How agents should buy a security review
+
+Security reviews are requested and signed at https://ghost77-agent.onrender.com/security/request (HTTP 200). Pay by card (Stripe links above) or in USDC on Base through that request flow. The live agent skill text says this is not an x402 endpoint.
+
+USDC payouts go only to 0x659db9537fee7a3473ff6e2a5a661af65ae288e3 on Base.
+
+The live agent llms.txt and agent card publish the same dollar amounts with these caps and turnaround estimates: Quick up to 2 hostnames / 10 endpoints, about 2 business days (the Security site also says up to 1 public GitHub repo); Standard up to 3 hostnames / 30 endpoints, about 4 business days, one retest of fixed findings within 14 days; Deep up to 4 hostnames / 75 endpoints, about 7 business days, one retest of fixed findings within 30 days. Terms: https://ghost77-agent.onrender.com/security/authorization and https://ghost77-security.onrender.com/terms
+
+Website Fix, Upkeep, Cleanup, and Chatbot are Stripe (or email/phone) only. They are not x402 endpoints.
+
+## Related x402 job (not a website review package)
+
+POST https://ghost77-agent.onrender.com/x402/contract_security_scan — $0.55 USDC on Base per call, unpaid requests return HTTP 402, payTo 0x659db9537fee7a3473ff6e2a5a661af65ae288e3. Automated read-only contract-admin scan. Not financial advice, not a penetration test.
+
+## Live discovery endpoints (verified 2026-11-11)
+
+The Security marketing site has no /llms.txt, agent card, OpenAPI, or x402 manifest (those paths 404). Use:
+
+- https://ghost77-agent.onrender.com/llms.txt
+- https://ghost77-agent.onrender.com/.well-known/agent.json
+- https://ghost77-agent.onrender.com/.well-known/agent-card.json
+- https://ghost77-agent.onrender.com/.well-known/x402
+- https://ghost77-agent.onrender.com/services.json
+- https://ghost77-agent.onrender.com/openapi.json
+- https://ghost77-agent.onrender.com/.well-known/mcp/server-card.json
+- MCP transport: POST https://ghost77-agent.onrender.com/mcp
+- A2A: https://ghost77-agent.onrender.com/a2a
+- Daily Hack Report RSS: https://ghost77-security.onrender.com/reports/feed.xml
+
+Machine-readable prices in this repo: ./pricing.json and ./services.json
+
+## Contact
+
+- Call Rebecca, AI receptionist, 24/7: +1 (518) 532-8037. Mention the business name.
+- Email: ghost77@mail.grokbot.com
+- Email published on the Security site: ghost77-secure@outlook.com
+- Never send keys, passwords, or seed phrases. GhOsT77 never asks for them.
