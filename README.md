@@ -2,6 +2,10 @@
 
 Clear fixes. Honest reviews. Your authorization first.
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/mxouiyavong-sys/ghost77-security/badge)](https://scorecard.dev/viewer/?uri=github.com/mxouiyavong-sys/ghost77-security)
+
+The badge is an automated [OpenSSF Scorecard](https://scorecard.dev/viewer/?uri=github.com/mxouiyavong-sys/ghost77-security) for this public sales repository. It is not a certification.
+
 GhOsT77 Security repairs the basics that make a small-business site look broken or unsafe, cleans a hacked site you own, sets up a FAQ chatbot on your site, watches it month to month, and writes consent-only security reviews of sites, APIs, or code you own.
 
 This repository is a public sales and discovery page for people and AI agents. It is not the product source code. Buy and request work on the live site. Prices and links below were copied from that site on 11 November 2026.
