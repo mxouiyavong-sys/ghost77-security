@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Validate the GhOsT77 Security public catalog files.
 
 Checks pricing.json and services.json against the JSON Schemas in schemas/

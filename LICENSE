@@ -1,15 +1,47 @@
-Copyright (c) 2026 GhOsT77
+This repository uses two licenses.
 
-All rights reserved.
+1. Software: MIT License
 
-This repository's text, pricing tables, and descriptive materials may not be
-copied, republished, or used to sell competing services without prior written
-permission from GhOsT77.
+   The following paths are open-source software under the MIT License below:
+   tools/, tests/, and schemas/.
 
-Links to the live GhOsT77 Security and GhOsT77 Agent sites are provided so
-customers and agents can buy services from GhOsT77. This is not a license to
-use GhOsT77 source code, trademarks, or service marks, and it is not an
-open-source software license.
+2. Everything else: all rights reserved
 
-The live sites, Stripe Payment Links, and third-party pages those links open
-remain subject to their own terms.
+   All other files (including README.md, pricing.json, services.json,
+   llms.txt, openapi.yaml, .well-known/agent.json, and the other Markdown
+   files) are Copyright (c) 2026 Michael Xouiyavong. All rights reserved.
+   This text, the pricing tables, and the descriptive materials may not be
+   copied, republished, or used to sell competing services without prior
+   written permission from the copyright holder. Reading and linking to
+   them, and automated reading by AI agents to buy GhOsT77 services, is
+   welcome.
+
+   Links to the live GhOsT77 Security and GhOsT77 Agent sites are provided
+   so customers and agents can buy services from GhOsT77. Nothing here
+   licenses GhOsT77 trademarks or service marks, or the source code of the
+   live sites. The live sites, Stripe Payment Links, and third-party pages
+   those links open remain subject to their own terms.
+
+------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Michael Xouiyavong
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
