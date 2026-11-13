@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Tests for tools/validate_catalog.py. Run: python3 -m unittest discover -s tests -v"""
 
 import copy

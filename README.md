@@ -126,7 +126,7 @@ Fresh public checks re-run on 11 November 2026, 4:51–4:53 PM ET, are recorded 
 | [.well-known/agent.json](.well-known/agent.json) | Agent card pointing at live endpoints |
 | [openapi.yaml](openapi.yaml) | Pointers to the live agent API and review request flow |
 | [SECURITY.md](SECURITY.md) | How to report a vulnerability |
-| [LICENSE](LICENSE) | All rights reserved for this content |
+| [LICENSE](LICENSE) | MIT for `tools/`, `tests/`, and `schemas/`; all rights reserved for the rest |
 | [SOURCES.md](SOURCES.md) | Public URLs these prices and links were taken from |
 | [TEST-RESULTS.md](TEST-RESULTS.md) | Fresh public scanner and TLS/header results for the live site |
 | [tools/validate_catalog.py](tools/validate_catalog.py) | Standard-library validator for the catalog files |
@@ -135,6 +135,13 @@ Fresh public checks re-run on 11 November 2026, 4:51–4:53 PM ET, are recorded 
 | [CHANGELOG.md](CHANGELOG.md) | Release notes for each tagged version |
 
 Suggested GitHub description and topics are in [PUBLISH.md](PUBLISH.md).
+
+## License
+
+Copyright (c) 2026 Michael Xouiyavong. This repository uses two licenses. The full text is in [LICENSE](LICENSE).
+
+- **MIT License:** `tools/`, `tests/`, and `schemas/` (the catalog validator, its automated tests, and the JSON Schemas).
+- **All rights reserved:** everything else, including `README.md`, `pricing.json`, `services.json`, `llms.txt`, `openapi.yaml`, `.well-known/agent.json`, and the other Markdown files. Those materials may not be copied, republished, or used to sell competing services without prior written permission.
 
 ## Report a problem, contribute, or run the checks
 
