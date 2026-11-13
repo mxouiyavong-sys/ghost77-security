@@ -6,3 +6,9 @@
 
 
 
+
+# Python test artifacts
+__pycache__/
+*.pyc
+.coverage
+htmlcov/

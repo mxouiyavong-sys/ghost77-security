@@ -1,0 +1,5 @@
+# Development-only tools (the validator itself needs no packages).
+# Install with: python3 -m pip install --require-hashes -r requirements-dev.txt
+pyflakes==4.1.0 \
+    --hash=sha256:b2e05e6bac8e49b67be2a6ffa63422c60f7193fc72e8180255907b41ec997dc1 \
+    --hash=sha256:592beb57058eb82eb190fb7514f2081c555c51000b029ff71286a681e6cf2f83

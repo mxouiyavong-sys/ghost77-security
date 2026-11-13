@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/mxouiyavong-sys/ghost77-security/blob/main/SECURITY.md
+    about: Please do not report vulnerabilities in public issues. Follow SECURITY.md instead.
+  - name: Buy or request work
+    url: https://ghost77-security.onrender.com
+    about: Services are bought on the live site, not through issues.
