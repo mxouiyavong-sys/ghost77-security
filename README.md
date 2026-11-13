@@ -129,5 +129,25 @@ Fresh public checks re-run on 11 November 2026, 4:51–4:53 PM ET, are recorded 
 | [LICENSE](LICENSE) | All rights reserved for this content |
 | [SOURCES.md](SOURCES.md) | Public URLs these prices and links were taken from |
 | [TEST-RESULTS.md](TEST-RESULTS.md) | Fresh public scanner and TLS/header results for the live site |
+| [tools/validate_catalog.py](tools/validate_catalog.py) | Standard-library validator for the catalog files |
+| [tests/](tests/) | Automated tests for the validator and the catalog |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to report bugs, propose changes, and run the checks |
+| [CHANGELOG.md](CHANGELOG.md) | Release notes for each tagged version |
 
-Suggested GitHub description and topics, if this is published later, are in [PUBLISH.md](PUBLISH.md). This local copy has not been pushed to GitHub.
+Suggested GitHub description and topics are in [PUBLISH.md](PUBLISH.md).
+
+## Report a problem, contribute, or run the checks
+
+- **Get it:** `git clone https://github.com/mxouiyavong-sys/ghost77-security.git`, or read the files on GitHub. Agents can fetch the raw JSON files directly.
+- **Report a wrong price, link, or file:** open an [issue](https://github.com/mxouiyavong-sys/ghost77-security/issues). Security vulnerabilities go through [SECURITY.md](SECURITY.md), not public issues.
+- **Contribute:** see [CONTRIBUTING.md](CONTRIBUTING.md). Changes land through pull requests to `main`.
+- **Check the catalog:** with Python 3.9 or newer and nothing else installed, run:
+
+```
+python3 tools/validate_catalog.py
+python3 -W error -m unittest discover -s tests -v
+```
+
+The validator checks the JSON files against [schemas/](schemas/), requires `https://` links, allows only the published payout wallet, and checks that prices agree between `pricing.json` and `services.json`. It reads local files only and makes no network requests.
+
+Releases are tagged with [Semantic Versioning](https://semver.org/) (for example `v0.1.0`) and described in [CHANGELOG.md](CHANGELOG.md).
