@@ -23,7 +23,7 @@ Issues and pull requests are public and searchable, and every message has its ow
 
 - `python3 tools/validate_catalog.py` prints `Catalog OK.`
 - `python3 -W error -m unittest discover -s tests -v` passes with no warnings.
-- `python3 -m pyflakes tools tests` reports nothing (install with `pip install pyflakes`).
+- `python3 -m pyflakes tools tests` reports nothing (install with `python3 -m pip install --require-hashes -r requirements-dev.txt`).
 - JSON files stay valid against the schemas in `schemas/`.
 - Every URL uses `https://`.
 - The only payout address anywhere is `0x659db9537fee7a3473ff6e2a5a661af65ae288e3` on Base. Pull requests that add or change a payout address will be rejected.
