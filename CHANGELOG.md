@@ -4,6 +4,10 @@ All notable changes to this repository are listed here. The format follows [Keep
 
 ## [Unreleased]
 
+### Added
+
+- OpenSSF Best Practices Passing badge for this repository, with a link to the public badge page. This is a self-assessed badge, not a SOC 2 or ISO certification and not a degree.
+
 ### Changed
 
 - `tools/`, `tests/`, and `schemas/` are now licensed under the MIT License. All other files remain all rights reserved. Copyright (c) 2026 Michael Xouiyavong. See [LICENSE](LICENSE).
