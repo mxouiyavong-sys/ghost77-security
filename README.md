@@ -3,8 +3,9 @@
 Clear fixes. Honest reviews. Your authorization first.
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/mxouiyavong-sys/ghost77-security/badge)](https://scorecard.dev/viewer/?uri=github.com/mxouiyavong-sys/ghost77-security)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16655/badge)](https://www.bestpractices.dev/en/projects/16655/passing)
 
-The badge is an automated [OpenSSF Scorecard](https://scorecard.dev/viewer/?uri=github.com/mxouiyavong-sys/ghost77-security) for this public sales repository. It is not a certification.
+The Scorecard badge is an automated [OpenSSF Scorecard](https://scorecard.dev/viewer/?uri=github.com/mxouiyavong-sys/ghost77-security) for this public sales repository. OpenSSF Best Practices: Passing (ghost77-security repo) is a self-assessed [Passing badge](https://www.bestpractices.dev/en/projects/16655/passing) for this catalog. Neither is a SOC 2 or ISO certification, and neither is a degree.
 
 GhOsT77 Security repairs the basics that make a small-business site look broken or unsafe, cleans a hacked site you own, sets up a FAQ chatbot on your site, watches it month to month, and writes consent-only security reviews of sites, APIs, or code you own.
 
